@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 100px !important;
+    background-color: black;
+    height: auto;
+    width: 100%;  
+    flex-wrap: wrap;
+    gap: 20rem;
+    align-items: center;
+}
+
+h1{
+    color: #04d9ff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.about {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.editor{
+    width: 20%;
+    height: 20%;
+    padding-top: 12%;
+    margin-left: 40%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.editor:hover{
+    transform: scaleX(-1);
+}
+
+
+.card{
+    /* flex-basis: 25%; */
+    position: relative;
+  
+    height: 450px;
+    width: 750px;
+  
+    overflow: hidden;
+    margin-top: 150px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 5px 8px #cfcfcf, -5px -5px 8px #04d9ff;
+
+    justify-content: center;
+    
+}
+
+.card .info{
+    position: relative;
+    overflow: hidden;
+}
+.gallery-cards{
+    
+    display: grid;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 10%;
+}
+.card .info::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    bottom: -180px;
+
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.card:nth-child(1) .info::before {
+    background: linear-gradient(0deg,white 20%, transparent);
+   }
+.card:nth-child(2) .info::before {
+       background: linear-gradient(0deg,white 20%, transparent );
+   }
+.card:nth-child(3) .info::before {
+       background: linear-gradient(0deg, white 25%, transparent );
+   }
+
+
+.card:hover .info::before{
+    bottom: 0px;
+}
+
+
+
+.card .info img{
+    height: 450px;
+    padding-right: 2px;
+    width: auto;
+    transition: 0.5s;
+}
+
+.card:hover .info img{
+    transform: translateY(-30px);
+    filter: blur(5px);
+}
+
+
+.card .desc{
+    color: black;
+    position: relative;
+    width: 700px;
+    bottom: -400px;
+    z-index: 2;
+    padding: 20px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.card:hover .desc{
+    bottom: 65%;
+}
+
+
+
+.desc button{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(26, 26, 26);
+    color: aliceblue;
+}
+
+
+.desc .cast{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    gap: 0.3em;
+
+}
+
+.desc .cast .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+
+
+/* Video */
+
+.video_1{
+
+    /* box-shadow: 0 0 40px white; */
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* position: fixed; */
+
+}
+
+.video_1 video{
+  
+    width:100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+/*  */
+
+
+#target-element {
+    height: 200vh;
+ 
+  }
+
+.img {
+margin-top: -325px;
+height: 150px;
+width: 150px;
+position: relative;
+z-index: 1;
+margin-left: 45%;
+
+
+
+}
+
+
+.view_m{
+    max-width: 30%;
+    height: auto;
+    opacity: 80%;
+    padding-top: 5%;
+}
+
+
+

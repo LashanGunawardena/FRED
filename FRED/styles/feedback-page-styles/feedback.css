@@ -1,0 +1,246 @@
+.form-wrapper {
+    padding: 10px;
+    max-width: 60vw;
+    margin: 20px auto;
+    border: 2px dashed rgba(4, 217, 255, 0.2);
+    border-radius: 5px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px dashed rgba(4, 217, 255, 0.2);
+    
+    & >h1 {
+        font-size: 3rem;
+        font-family: 'Winter Memories';
+    }
+
+    & >p {
+        font-size: 1.5rem;
+        font-family: 'Kindergarten';
+    }
+}
+
+.form-fieldset {
+    font-family: 'Kindergarten';
+    border: none;
+    padding: 5px;
+}
+
+.form-legend {
+    width: 100%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    border-bottom: 1px solid #04d9ff;
+    padding-bottom: 3px;
+    margin: 20px 0;
+}
+
+.form-option-wrapper {
+    font-size: 1.25rem;
+    padding: 10px;
+}
+
+.radio-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+.radio-content {
+    display: inline-block;
+    width: min-content;
+    margin: 20px 1% 20px 0;
+    height: 210px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.radio-label {
+    width : 100%;
+    height: 100%;
+    border: 1px solid rgba(4, 217, 255, 0.2);
+    display: block;
+    padding: 10px 10px 30px 10px;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+
+    &:hover, &:focus, &:active {
+        border: 1px solid rgba(4, 217, 255, 1);
+    }
+}
+
+.radio-label > svg {
+    fill:#04d9ff;
+}
+
+.radio-button[type="radio"] {
+    appearance: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-button[type="radio"]:active ~ label {
+    opacity: 1;
+}
+
+.radio-button[type="radio"]:checked ~ label {
+    opacity: 1;
+    border: 1px solid #04d9ff;
+}
+
+.visit-time-input-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.input-wrapper {
+    color: #aaa;
+    position: relative;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #04d9ff;
+}
+
+.visit-time-input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.visit-time-label {
+    display: block;
+    padding: 30px 25px 25px 80px;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.visit-time-label:hover ~ label {
+    color:#04d9ff;
+}
+
+.check {
+    display: block;
+    position: absolute;
+    border: 5px solid #aaa;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border 0.25s linear;
+}
+
+.input-wrapper:hover ~ .check {
+    border: 5px solid #04d9ff;
+}
+
+.check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 11px;
+    width: 11px;
+    top: 2px;
+    left: 2px;
+    margin: auto;
+    transition: background-color 0.25s linear;
+}
+
+.visit-time-input[type="radio"]:checked ~ .check {
+    border: 5px solid #04d9ff;
+}
+
+.visit-time-input[type="radio"]:checked ~ .check::before {
+    background: #04d9ff;
+}
+
+.visit-time-input[type="radio"]:checked ~ label {
+    color: #04d9ff;
+}
+
+#input-name, #input-email, #comment-section {
+    padding: 12px;
+    border: 3px solid #aaa;
+    width: 100%;
+    margin-bottom: 18px;
+    color: #000;
+    font-family: 'Kindergarten';
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #fff;
+    border-radius: 5px;
+
+    &:focus, &:hover {
+        outline: none;
+        border-color: #04d9ff;
+        + label {
+            color: #04d9ff;
+            cursor: text;
+        }
+    }
+}
+
+#input-name, #input-email {
+    &:valid {
+        background-color: rgba(4, 255, 92, 0.651);
+    }
+}
+
+#comment-section {
+    resize: none;
+}
+
+.feedback-button-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback-completion-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback-preview {
+    visibility: hidden;
+    transition: 1.1s ease-out;
+    transform: scale(1);
+    opacity: 0;
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(4, 217, 255, 0.65);
+}
+
+.toggle-preview {
+    visibility: visible; 
+    opacity: 1;
+    transform: scale(1);
+}
+
+.feedback-preview > .feedback-preview-wrapper {
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: fit-content;
+    background-color: black;
+}
+
+.feedback-preview-wrapper > img {
+    width: 100%;
+}
+
+.preview-text {
+    padding: 2rem;
+    font-family: 'Kindergarten';
+    font-size: 1.5rem;
+}

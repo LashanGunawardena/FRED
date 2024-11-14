@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+/*Topics*/
+#topics{
+    background-image: url("../../images/team-page-images/peopleDiscussing.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    text-align: left;
+    margin-left: 60px;
+    margin-top: -160px;
+    font-family: Kredit, Helvetica;
+    color: white;
+}
+
+#mainTopic{
+    font-size: 100px;
+    padding-top: 110px;
+}
+
+#subTopic{
+    font-size: 30px;
+}
+
+#continueButton{
+    margin-top: 80px;
+    margin-bottom: 300px;
+    padding: 15px;
+}
+
+/* Team Details */
+#lowerPartTopic{
+    font-size: 60px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: Kredit, Helvetica;
+
+}
+
+.content img{
+    width: 250px;
+    height: 400px;
+    margin: 0px 60px 0 60px; 
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 2px 2px 11px #04d9ff;
+}
+
+.content img:hover{
+    border: 2px solid #04d9ff;
+    animation-name: imgzoomanimation; /*Calling the animation*/
+    animation-duration: 1s; 
+    animation-fill-mode: forwards; /*The image will remain in the same place after the animation  */
+}
+
+.content:hover img{
+    border: 2px solid #04d9ff;
+    animation-name: imgzoomanimation; /*Calling the animation*/
+    animation-duration: 1s; 
+    animation-fill-mode: forwards; /*The image will remain in the same place after the animation  */
+}
+
+.description{
+    font-weight: bold;
+    font-family: Valorant, Helvetica;
+    width: 250px;
+    text-align: center;
+    margin: -125px 60px 0px 60px;
+    padding-top: 15px;
+    height: 134px;
+    position: relative;
+    border: 2px solid #04d9ff;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);/*Applying glass effect*/
+    display: none;
+}
+
+#dulainDetails, #naflanDetails{
+    color: black;
+}
+
+
+#lashanDetails, #vihanDetails{
+    color: #04d9ff;
+}
+
+.content:hover .description{
+    display: block;
+    animation-name: imgzoomanimation; /*Calling the animation*/
+    animation-duration: 1s; 
+    animation-fill-mode: forwards; /*The image will remain in the same place after the animation  */
+}
+
+#cardContent{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+#totalContent{
+    padding-bottom: 100px;
+}
+  
+/* Animation */
+@keyframes imgzoomanimation {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}

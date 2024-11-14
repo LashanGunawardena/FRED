@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+  <title>Site Map</title>
+  <style>
+    body{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+    } 
+
+    svg {
+   
+        width: 100%;
+        height: 100%;
+        padding-top: 15%;
+
+        background-image: url(images/site-map-images/bg10.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+  
+    }
+
+    .circle {
+      /* fill: rgba(0, 0, 0, 0.473); */
+      fill: #6272547c;
+      stroke: white;
+      stroke-width: 3px;
+      
+    }
+
+    .circle:hover {
+      fill:#04d9ff76;
+
+      cursor: pointer;    
+      stroke: black;
+      
+    }
+
+    .circle:hover text{
+        fill: black;
+    }
+
+    .rec {
+      fill: gray;
+      stroke: white;
+      stroke-width: 2px;
+      
+    }
+
+    .rec:hover {
+        fill: rgba(5, 5, 5, 0.684);
+    }
+
+
+    text {
+      fill: white;
+      font-family: Arial, sans-serif;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+
+    #home{
+      fill: rgba(95, 95, 95, 0.576);
+      stroke: white;
+      stroke-width: 4px;
+       
+    }
+
+    #home text{
+        font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">  
+    <div class="navbar-radio-group">
+        <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+        <label for="navbar-item-1">Home</label>
+        <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+        <label for="navbar-item-2">Courses</label>
+        <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+        <label for="navbar-item-3">Volunteer</label>
+        <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+        <label for="navbar-item-4">Shop</label>
+        <input type="radio" id="navbar-item-5" name="navbar" value="About">
+        <label for="navbar-item-5">About</label>
+        <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+        <label for="navbar-item-6">Profile</label>
+        <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+        <label for="navbar-item-7">Team</label>
+        <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+        <label for="navbar-item-8">Gallery</label>
+        <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+        <label for="navbar-item-9">Feedback</label>
+        <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+        <label for="navbar-item-10">PageEditor</label>
+        <div class="selection-indicator-wrapper">
+            <span class="selection-indicator"></span>
+        </div>
+    </div>
+</nav>
+
+  <div class="svg-wrapper">
+
+
+        <!-- Main Circle -->
+      
+        
+        <svg width="1200" height="600">
+        <a href="index.html" target="_self">
+        <rect id="home" width="200" height="100" x="495" y="15" rx="20" ry="20" />
+          <title>Home</title>
+        <text x="590" y="65">Home</text>
+        </a>
+        <line x1="590" y1="115" x2="590" y2="170" stroke="white" stroke-width="3" />
+
+        <!-- Middle straight line -->
+        <line x1="100" y1="170" x2="1090" y2="170" stroke="white" stroke-width="3" />
+
+
+        <!-- Pages -->
+        <a href="courses.html" target="_self">
+        <circle class="circle" cx="100" cy="300" r="45">
+          <title>Courses</title>
+        </circle>
+        <text x="100" y="300">Courses</text>
+        </a>
+        <!-- <line x1="575" y1="80" x2="200" y2="110" stroke="white" stroke-width="2" marker-end="url(#arrow)"/> -->
+        <line x1="100" y1="170" x2="100" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+
+        <a href="volunteer.html" target="_self">
+        <circle class="circle" cx="210" cy="300" r="45">
+            <title>Volunteer</title>
+          </circle>
+          <text x="210" y="300">Volunteer</text>
+        </a>
+          <!-- <line x1="575" y1="80" x2="295" y2="110" stroke="white" stroke-width="2" /> -->
+          <line x1="210" y1="170" x2="210" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <a href="shop.html" target="_self">
+        <circle class="circle" cx="320" cy="300" r="45">
+            <title>Shop</title>
+          </circle>
+          <text x="320" y="300">Shop</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line x1="320" y1="170" x2="320" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <a href="about.html" target="_self">
+        <circle class="circle" cx="430" cy="300" r="45">
+            <title>About</title>
+          </circle>
+          <text x="430" y="300">About</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line x1="430" y1="170" x2="430" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <a href="user-profile.html" target="_self">
+          <circle class="circle" cx="540" cy="300" r="45">
+            <title>Profile</title>
+          </circle>
+          <text x="540" y="300">Profile</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line x1="540" y1="170" x2="540" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <a href="site-map.html" target="_self">
+        <circle class="circle" cx="650" cy="300" r="45">
+          <title>Site-map</title>
+        </circle>
+        <text x="650" y="300">Site-map</text>
+        </a>
+        <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+        <line x1="650" y1="170" x2="650" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <a href="team.html" target="_self">
+        <circle class="circle" cx="760" cy="300" r="45">
+            <title>Team</title>
+          </circle>
+          <text x="760" y="300">Team</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line x1="760" y1="170" x2="760" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <a href="gallery.html" target="_self">
+          <circle class="circle" cx="870" cy="300" r="45">
+            <title>Gallery</title>
+          </circle>
+          <text x="870" y="300">Gallery</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line x1="870" y1="170" x2="870" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <a href="feedback.html" target="_self">
+          <circle class="circle" cx="980" cy="300" r="45">
+            <title>Feedback</title>
+          </circle>
+          <text x="980" y="300">Feedback</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line x1="980" y1="170" x2="980" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+          <a href="page-editor.html" target="_self">
+          <circle class="circle" cx="1090" cy="300" r="45">
+            <title>Page Editor</title>
+          </circle>
+          <text x="1090" y="300">Page Editor</text>
+          </a>
+          <!-- <line x1="575" y1="80" x2="675" y2="120" stroke="white" stroke-width="2" /> -->
+          <line class="name_l" x1="1090" y1="170" x2="1090" y2="245" stroke="white" stroke-width="2" marker-end="url(#arrow)"/>
+
+      
+        <!-- Sub pages -->
+        <a href="courses.html" target="_self">
+        <circle class="circle" cx="170" cy="500" r="30">
+          <title>Physics</title>
+        </circle>
+        <text x="170" y="500">Physics</text>
+        </a>
+        <line x1="100" y1="345" x2="160" y2="460" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+
+        <a href="chemistry-course.html" target="_self">
+        <circle class="circle" cx="240" cy="450" r="30">
+            <title>Chem</title>
+          </circle>
+          <text x="240" y="450">Chem</text>
+        </a>
+        <line x1="100" y1="345" x2="220" y2="415" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+
+        <a href="math-course.html" target="_self">
+        <circle class="circle" cx="100" cy="550" r="30">
+            <title>Maths</title>
+          </circle>
+          <text x="100" y="550">Maths</text>
+        </a>
+          <line x1="100" y1="345" x2="100" y2="510" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+
+
+
+
+          <!-- names(rec) -->
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="white" />
+          </marker>
+
+
+      
+        <a href="student-1.html" target="_self">
+        <rect class="rec" width="100" height="50" x="750" y="500" rx="20" ry="20" />
+        <text x="800" y="525">Dulein</text>
+        </a>
+        <line class="name_l" x1="1090" y1="345" x2="800" y2="495" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+
+        <a href="student-2.html" target="_self">
+        <rect class="rec" width="100" height="50" x="900" y="500" rx="20" ry="20" />
+        <text x="950" y="525">Naflan</text>
+        </a>
+        <line x1="1090" y1="345" x2="955" y2="490" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+      
+        <a href="student-3.html" target="_self">
+        <rect class="rec" width="100" height="50" x="1050" y="500" rx="20" ry="20" />
+        <text x="1100" y="525">Lashan</text>
+        </a>
+        <line x1="1090" y1="345" x2="1100" y2="490" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+
+        <a href="student-4.html" target="_self">
+        <rect class="rec" width="100" height="50" x="1200" y="500" rx="20" ry="20" />
+        <text x="1250" y="525">Vihan</text>
+        </a>
+        <line x1="1090" y1="345" x2="1250" y2="490" stroke="white" stroke-width="2" marker-end="url(#arrow)" />
+        
+      </svg>
+
+  </div>
+    <footer class="footer-section">
+      <div class="footer-column-1">
+          <p>FR-ED</p>
+          <p>Education made accessible.</p>
+          <p>2024 &copy; All Rights Reserved</p> 
+      </div>
+      <div class="footer-column-2">
+          <a href="about.html" class="footer-link">About</a>
+          <a href="about.html" class="footer-link">Our Mission</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="site-map.html" class="footer-link">Site Map</a>
+      </div>
+      <div class="footer-column-3">
+          <a href="courses.html" class="footer-link">Courses</a>
+          <a href="shop.html" class="footer-link">Shop</a>
+          <a href="volunteer.html" class="footer-link">Join our Team</a>
+          <a href="user-profile.html" class="footer-link">Profile</a>
+      </div>
+  </footer>
+
+    <script defer src="scripts/navbar.js"> </script> 
+  <script>
+    const circles = document.querySelectorAll('.circle');
+    circles.forEach(circle => {
+      circle.addEventListener('mouseover', () => {
+        const title = circle.querySelector('title').textContent;
+        console.log(`Hovering over ${title}`);
+      });
+    });
+  </script>
+</body>
+</html>

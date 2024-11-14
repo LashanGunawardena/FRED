@@ -1,0 +1,63 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hero-section-text-container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+}
+
+.hero-section-text {
+    font-size: 5vw;
+    letter-spacing: -.01rem;
+    line-height: 100%;
+    margin: 0;
+    width: 100%;
+
+    border-bottom: 1px solid #2f2b28;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section-special-text {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: #04d9ff;
+    color: black;
+
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+    transform-origin: center;
+    transition: all cubic-bezier(0.1, 0.5, 0.5, 1) 0.4s;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section-text:hover > .hero-section-special-text {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hero-section-image {
+    animation: flying 2s infinite alternate both;
+}
+
+.hero-section-button {
+    color: #04d9ff;
+}

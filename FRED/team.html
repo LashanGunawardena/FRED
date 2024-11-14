@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <title>Team</title>
+    <link rel = "stylesheet" href = "styles/team-page-styles/team.css">
+    <link rel = "stylesheet" href = "styles/navbar.css">
+    <link rel = "stylesheet" href = "styles/main.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team" checked>
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <!--Topics-->
+    <div id="topics">
+        <p id="mainTopic">OUR CONTRIBUTION</p>
+        <p id="subTopic">Hover over the images for details!</p>
+        <button onclick="scrollIntoView('lowerPartTopic');" id="continueButton" class="fred-button">Learn More</button>
+    </div>
+    <hr>
+    <!--Team details-->
+    <div id="totalContent">
+        <div id="lowerPartTopic">Our Team</div>
+        <div id="cardContent">
+            <div class="content">
+                <a href="student-1.html"><img src="images/team-page-images/Dulain.jpg" alt="Person 1"></a>
+                <div class="description" id="dulainDetails">
+                    <p>Dulain</p>
+                    <p>Student 1</p>
+                    <p>Splash Screen || Shop</p>
+                </div>
+            </div>
+            <div class="content">
+                <a href="student-2.html"><img src="images/team-page-images/Naflan.jpg" alt="Person 2"></a>
+                <div class="description" id="naflanDetails">
+                    <p>Naflan</p>
+                    <p>Student 2</p>
+                    <p>Home Page || Feedback</p>
+                </div>
+            </div>
+            <div class="content">
+                <a href="student-3.html"><img src="images/team-page-images/lashan.jpg" alt="Person 3"></a>
+                <div class="description" id="lashanDetails">
+                    <p>Lashan</p>
+                    <p>Student 3</p>
+                    <p>User Profile || Team</p>
+                </div>
+            </div>
+            <div class="content">
+                <a href="student-4.html"><img src="images/team-page-images/vihan.jpg" alt="Person 4"></a>
+                <div class="description" id="vihanDetails">
+                    <p>Vihan</p>
+                    <p>Student 4</p>
+                    <p>Gallery || Sitemap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+</body>
+</html>

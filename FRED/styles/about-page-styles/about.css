@@ -1,0 +1,67 @@
+.about-section-main-heading {
+    font-family: 'Winter Memories';
+    font-size: 5rem;
+    text-align: center;
+}
+
+.about-section-sub-heading {
+    font-family: 'Emily Olivia';
+    font-size: 3rem;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+.about-section-text {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kindergarten';
+    font-size: 1.5rem;
+}
+
+.about-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'content-1 content-2'
+}
+
+.about-section-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section-image-1 {
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(3,87,124,1) 50%, rgba(4,217,255,1) 100%);
+}
+
+.about-section-image-2 {
+    width: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(3,87,124,1) 50%, rgba(4,217,255,1) 100%); 
+}
+
+.gallery-section-wrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-section-text {
+    font-family: 'Kredit';
+    font-size: 1.5rem;
+}
+
+.about-section-hidden-content {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.about-section-show-content {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

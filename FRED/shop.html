@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/shop-page-styles/shop.css">
+    <link rel="stylesheet" type="text/css" href="styles/shop-page-styles/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!---title of page-->
+    <title>FR-ED Store</title>
+</head>
+
+<body>                                                                                                                                                                                                                                                    
+
+    <!--navigation bar-->
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop" checked>
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+        <!-- <a href="#cart-section"><img src="images/shop-page-images/cart.png" alt="Cart" class="cart-icon"></a> -->
+    </nav>
+    
+
+    <!-- Introduction section -->
+    <div class="intro">
+        <h1>Welcome to FR-ED Store</h1>
+
+        <p>Help support us in producing more quality courses free of charge. All purchases help directly fund the maintenance of Fred!</p>
+    </div>    
+
+    <!-- Catalog section for displaying products -->
+    <div class="catalog">
+    
+        <div class="product">
+            <img class="item" src="images/shop-page-images/white-tshirt.jpeg" alt="white-tshirt">
+            <h2>T-shirt (white)</h2>
+            <p>$19.99</p>
+            <select id="white-tshirt-size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+            </select>
+            <button class="fred-button" onclick="confirmToCart('T-shirt (white)', 19.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img class="item" src="images/shop-page-images/black-tshirt.png" alt="black-tshirt">
+            <h2>T-shirts (black)</h2>
+            <p>$19.99</p>
+            <select id="black-tshirt-size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+            </select>
+            <button class="fred-button" onclick="confirmToCart('T-shirt (black)', 19.99)">Add to Cart</button>
+        </div>        
+        
+        <div class="product">
+            <img class="item" src="images/shop-page-images/hoodie.jpg" alt="hoodie">
+            <h2>Hoodie</h2>
+            <p>$24.99</p>
+            <select id="hoodie-size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+                <option value="XL">Extra Large</option>
+            </select>
+            <button class="fred-button" onclick="confirmToCart('Hoodie', 24.99)">Add to Cart</button> 
+        </div>
+        
+        <div class="product">
+            <img class="item" src="images/shop-page-images/bagpack.png" alt="bagpack">
+            <h2>Bagpack</h2>
+            <p>$24.99</p>
+            <button class="fred-button" onclick="confirmToCart('Bagpack', 24.99)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img class="item" src="images/shop-page-images/plushie.jpeg" alt="plushie">
+            <h2>Plushies</h2>
+            <p>$14.99</p>
+            <button class="fred-button" onclick="confirmToCart('Plushie', 14.99)">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img class="item" src="images/shop-page-images/notebook.jpg" alt="notebook">
+            <h2>Notebooks</h2>
+            <p>$9.99</p>
+            <button class="fred-button" onclick="confirmToCart('Notebook', 9.99)">Add to Cart</button>
+        </div>
+       
+    
+    </div>    
+    
+
+     <!-- Donation section -->
+    <div class="donate">
+        <h2>Donate directly to us</h2>
+        <div class="donate-options">
+            <p>Choose Amount:</p>
+            <button class="donate-button" onclick="confirmDonation('$5 Donation', 5)">$5</button>
+            <button class="donate-button" onclick="confirmDonation('$10 Donation', 10)">$10</button>
+            <button class="donate-button" onclick="confirmCustomDonation()">Custom Amount</button>
+        </div>
+
+    </div>
+
+
+    <!-- Shopping cart section -->
+    <div class="cart-container" id="cart-section">
+        <h2>Shopping Cart</h2>
+
+         <!-- Cart table to display items added to the cart -->
+        <table class="cart">
+            <thead>
+                <tr class="main-row">
+                    <th class="item">Item</th>
+                    <th class="price">Price</th>
+                    <th class="quantity">Quantity</th>
+                    <th class="action">Action</th> 
+                </tr>
+            </thead>
+
+            <tbody class="cart-items">
+
+            
+            </tbody>
+        
+            <tfoot>
+                <tr>
+                    <td colspan="2"></td>
+                    <td>Total:</td>
+                    <td id="total-price">$0.00</td>
+                </tr>
+            </tfoot>
+
+        </table> 
+        
+        <button class="submit-btn" onclick="redirectToCheckout()">Checkout Now!</button>
+    </div>
+
+    
+
+
+    <!-- External JavaScript files -->
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/shop-page-scripts/shop.js"></script>
+    <script defer src="scripts/shop-page-scripts/cart.js"></script>
+
+</body>
+</html>

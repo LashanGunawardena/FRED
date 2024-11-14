@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/student-two-page-editor-styles/student-2.css">
+    <title>FR-ED PageEditor</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor" checked>
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="heading-section">
+            <h1>Page Editor</h1>
+            <p>
+                Name: Mohamed Naflan Nazar<br>
+                Role: Student 2<br>
+                The following were edited by me!<br>
+            </p>
+        </section>
+        <section class="student2-contribution-section">
+            <button class="toggle-button fred-button" id="center-button" data-target="toggle-wrapper-1">Home Page</button>
+            <div class="toggle-wrapper toggle-wrapper-hidden" id="toggle-wrapper-1">
+                <h2>Home Page</h2>
+                <div class="toggle-content">
+                    Created the Home Page basic html and used CSS flex and grid to make separate each section and add styles. Used Javascript to make the navbar interactive and to get the typewriter effect in the volunteer section of the homepage.
+                </div>
+                <div class="toggle-action-wrapper">
+                    <button class="toggle-button fred-button" data-target="toggle-wrapper-1">Close</button>
+                    <button onclick="window.location.href = './index.html'" class="fred-button">Home</button>
+                </div>
+            </div>
+        </section>
+        <section class="student2-contribution-section">
+            <button class="toggle-button fred-button" id="center-button" data-target="toggle-wrapper-2">Feedback</button>
+            <div class="toggle-wrapper toggle-wrapper-hidden" id="toggle-wrapper-2">
+                <h2>Feedback</h2>
+                <div class="toggle-content">
+                    Created a basic html form to get the user feedback. Used basic CSS to style the page and make it interactive. Added Javascript SMTP.js (safe mail transfer protocol) to collect the user information and send it via an email to fred23official@gmail.com
+                </div>
+                <div class="toggle-action-wrapper">
+                    <button class="toggle-button fred-button" data-target="toggle-wrapper-2">Close</button>
+                    <button onclick="window.location.href = './feedback.html'" class="fred-button">Feedback</button>
+                </div>
+            </div>
+        </section>
+        <section class="student2-contribution-section">
+            <button class="toggle-button fred-button" id="center-button" data-target="toggle-wrapper-3">About</button>
+            <div class="toggle-wrapper toggle-wrapper-hidden" id="toggle-wrapper-3">
+                <h2>About Page</h2>
+                <div class="toggle-content">
+                    Created the about page that introduces the user what FR-ED offers and the rationale behind it. Used CSS transition animations to display items using the scroll bar. Used Javascript IntersectionObserver object to check if the content intersects the screen and displayed the CSS transition animations.
+                </div>
+                <div class="toggle-action-wrapper">
+                    <button class="toggle-button fred-button" data-target="toggle-wrapper-3">Close</button>
+                    <button onclick="window.location.href = './about.html'" class="fred-button">About</button>
+                </div>
+            </div>
+        </section>
+        <section class="student2-contribution-section">
+            <button class="toggle-button fred-button" id="center-button" data-target="toggle-wrapper-4">Other</button>
+            <div class="toggle-wrapper toggle-wrapper-hidden" id="toggle-wrapper-4">
+                <h2>Navbar + Footer + Theme</h2>
+                <div class="toggle-content">
+                    Created the navbar, footer and the overall website color scheme including the fonts and button design. Used HTML radio buttons for the navbar and Javascript for its functionality. Footer consists of three columns using CSS grids.
+                </div>
+                <div class="toggle-action-wrapper">
+                    <button class="toggle-button fred-button" data-target="toggle-wrapper-4">Close</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+    <script defer>
+        const toggleButtons = document.querySelectorAll(".toggle-button");
+        
+        [].forEach.call(toggleButtons, function (button) {
+            button.addEventListener("click", function () {
+                var targetId = button.getAttribute("data-target");
+                var targetWrapper = document.getElementById(targetId);
+                if (targetWrapper) {
+                    targetWrapper.classList.toggle("toggle-wrapper-hidden");
+                }
+            })
+        });
+    </script> 
+</body>
+</html>

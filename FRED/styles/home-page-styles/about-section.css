@@ -1,0 +1,61 @@
+.about-section {
+    padding: 5rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom,rgba(2,0,36,1) 0%, rgba(4,217,255,1) 97%, rgba(0,212,255,1) 100%);
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'heading heading'
+        'image  text';
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-section-heading {
+    text-align: center;
+    grid-area: heading;
+}
+
+.about-section-image-1 {
+    margin-left: 200px;
+    width: 350px;
+    height: 350px;
+    z-index: 1;
+    grid-area: image;
+}
+
+.about-section-image-2 {
+    width: 700px;
+    height: 600px;
+    grid-area: image;
+    animation: float 3.5s infinite alternate both;
+}
+
+.about-section-content-wrapper {
+    font-family: 'Kindergarten';
+    grid-area: text;
+}
+
+.about-section-button {
+    color: black;
+}
+
+.about-section-text {
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, rgba(2,0,36,1) 45%, rgba(4,217,255,1) 44.5%);  
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-section-heading {
+    font-family: 'Computer';
+    font-size: 10rem;
+}
+
+.about-section-heading > span:hover {
+    color: aqua;
+    font-weight: 400;
+    font-size: 11rem;
+}

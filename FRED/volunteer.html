@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Volunteer</title>
+  <link rel="stylesheet" href="styles/volunteer-page-styles/content_page.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+
+  <nav>
+    <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">  
+    <div class="navbar-radio-group">
+        <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+        <label for="navbar-item-1">Home</label>
+        <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+        <label for="navbar-item-2">Courses</label>
+        <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer" checked>
+        <label for="navbar-item-3">Volunteer</label>
+        <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+        <label for="navbar-item-4">Shop</label>
+        <input type="radio" id="navbar-item-5" name="navbar" value="About">
+        <label for="navbar-item-5">About</label>
+        <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+        <label for="navbar-item-6">Profile</label>
+        <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+        <label for="navbar-item-7">Team</label>
+        <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+        <label for="navbar-item-8">Gallery</label>
+        <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+        <label for="navbar-item-9">Feedback</label>
+        <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+        <label for="navbar-item-10">PageEditor</label>
+        <div class="selection-indicator-wrapper">
+            <span class="selection-indicator"></span>
+        </div>
+    </div>
+</nav>
+
+  <div class="video-container">
+    <video id="my-video" autoplay loop muted>
+        <source src="videos/volunteer-page-vids/vd3.mp4" type="video/mp4">
+
+        
+      </video>
+  </div>
+<div class="content-overlay">
+  <div id="top">
+    <p class="maintitle">Wanna join Us?</p><br><br><br><br>
+    <p class="secondtitle">join with us and help those in-need</p>
+</div>
+<div class="s_button">
+  <!-- button -->
+  <a href="#formm" class="button">
+    <button type="button" href="#formm">BE A VOLUNTEER</button>
+  </a>
+</div>
+      </div>
+
+
+
+<div class="contact-us" id="formm">
+
+  <!-- button -->
+
+  <a href="#top" class="button">
+    <button type="button" href="#top">Home</button>
+  </a>
+
+  <!-- form -->
+
+  <form>
+    <input type="text" id="name" value="" placeholder="FULL NAME">
+      <input id="email" placeholder="Email" type="email"/>
+      <input type="tel" placeholder="Phone number" id="no">
+    <input type="text" id="address" value="" placeholder="Home Address">
+    <input type="text" id="license" value="" placeholder="Teaching License No. ">
+    <input type="text" id="degree" value="" placeholder="Degrees">
+    <input type="text" id="study" value="" placeholder="Areas of Study ">
+    <input type="text" id="certifications" value="" placeholder="Relevant Certifications or Training programs">
+    <input type="text" id="exp" value="" placeholder="Teaching Experience">
+    <input type="date" id="yrs" value="" placeholder="Year">
+    <input type="text" id="grade" value="" placeholder="Grade Levels">
+    <input type="text" id="subject" value="" placeholder="Subject">
+    <button type="button" id="signup">SIGN UP</button><br><br><br><br>
+  </form>
+</div>
+
+
+<script defer src="scripts/navbar.js"> </script>
+</body>
+</html>

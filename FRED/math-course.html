@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <title>Content</title>
+    <link rel = "stylesheet" href = "styles/math-course-page-styles/math.css">
+    <link rel = "stylesheet" href = "styles/navbar.css">
+    <link rel = "stylesheet" href = "styles/main.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses" checked>
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <div id="totalcontent">
+        <!--Top part of the webpage-->
+        <div id="partA">
+            <p id="topic">MATHS</p>
+            <p id="briefing">Dive into the captivating realm of mathematics with our comprehensive collection of free online courses.</p>
+            <div id="menu">
+                <div class="menuPicture">
+                    <a href="#section1"><img src="images/math-course-page-images/grade10.jpg" alt=""></a>
+                </div>
+                <div class="menuPicture">
+                    <a href="#section2"><img src="images/math-course-page-images/grade11.jpg" alt=""></a>
+                </div>
+                <div class="menuPicture">
+                    <a href="#section3"><img src="images/math-course-page-images/grade12.jpg" alt=""></a>
+                </div>
+                <div class="menuPicture">
+                    <a href="#section4"><img src="images/math-course-page-images/grade13.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!--Lower part of the webpage-->
+        <div id="partB">
+            <div id="section1" class="section">
+                <img src="images/math-course-page-images/CourseGrade10.jpg" alt="Course for grade 10">
+                <div class="description"><p>Designed to educate students on basic algebra skills, linear and quadratic equations with graphing linear equations and understanding foundational functions.
+                                            Geometry comprises principles like angles, triangles, circles, and basic theorems. Statistical analysis becomes prominent, covering data representation,
+                                            measures of central tendency, probability calculations, and introductory statistical analysis techniques.</p>
+                </div>
+            </div>
+            <div id="section2" class="section">
+                <img src="images/math-course-page-images/CourseGrade11.jpg" alt="Course for grade 11">
+                <div class="description"><p>This course will discuss about algebraic proficiency advances with topics like exponential and logarithmic functions, polynomial operations, and systems of equations. 
+                                            Trigonometry introduces trigonometric functions, equation solving, and applications in triangles and circles. Coordinate Geometry covers equations of lines, distance formulas, and basic conic sections.</p>
+                </div>
+            </div>
+            <div id="section3" class="section">
+                <img src="images/math-course-page-images/CourseGrade12.jpg" alt="Course for grade 12">
+                <div class="description"><p>This course serves as a bridge to calculus with pre-calculus, revisiting algebra, trigonometry, and geometry. 
+                                            This includes advanced functions, sequences and series, and introductory vector operations. For those opting for calculus, 
+                                            the course introduces fundamental concepts such as limits, derivatives, and integrals, as well as their applications.</p>
+                </div>
+            </div>
+            <div id="section4" class="section">
+                <img src="images/math-course-page-images/CourseGrade13.jpg" alt="Course for grade 13">
+                <div class="description"><p>Discusses about how calculus II explores advanced integration techniques, sequences and series, and applications in various fields. 
+                                            Linear Algebra introduces matrices, determinants, vector spaces, and linear transformations, while Discrete Mathematics explores discrete structures like sets,
+                                            graphs, and combinatorial methods, particularly valuable for students interested in computer science and cryptography.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+</body>
+</html>

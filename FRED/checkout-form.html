@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout-form</title>
+    <link rel="stylesheet" href="styles/checkout-page-styles/checkout.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-form">
+
+            <!-- Heading for the checkout form -->
+            <h2>Checkout</h2>
+
+            <!-- Checkout form-->
+            <form id="checkout-form">
+
+
+                <!-- Form group for full name -->
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <!-- Form group for email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Form group for phone -->
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Form group for address -->
+                <div class="form-group">
+                    <label for="address">Shipping Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <!-- Form group for payment method -->
+                <div class="form-group" id="payment-group">
+                    <label for="payment-method">Payment Method:</label>
+
+                    <!-- Select field for payment method -->
+                    <select id="payment-method" name="payment-method" required>
+                        <option value="">Select Payment Method</option>
+                        <option value="cash">Cash on delivery</option>
+                        <option value="card">Card</option>
+                    </select>
+                </div>
+
+                <!-- Form group for card number input which is initially hidden -->
+                <div id="card-number-input" class="form-group" style="display: none;">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+
+                <!-- Submit button for the checkout form -->
+                <button type="submit" class="submit-btn" onclick="checkoutConfirm()">Complete Purchase</button>
+
+                <!-- Link to go back to the shop page -->
+                <a class="back" href="shop.html"> ← go back</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/checkout-page-scripts/form.js"></script>
+</body>
+</html>

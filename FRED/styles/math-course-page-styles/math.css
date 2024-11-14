@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: #04d9ff;
+    text-align: center;
+}
+
+/* Top part of webpage */
+#topic{
+    font-size: 90px;
+    font-family: Computer, Helvetica;
+}
+
+#briefing{
+    font-family: Kredit, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#partA{
+    margin-top: -70px;
+    padding-top: 10px;
+    margin-bottom: 400px;
+    color: white; 
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../../images/math-course-page-images/mathsBackground.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menuPicture{
+    float: left;
+    padding-top: 50px;
+}
+
+.menuPicture img{
+    width: 150px;
+    height: 150px;
+    margin: 130px 70px 300px 70px ;
+    border-radius: 30px;
+}
+
+.menuPicture img:hover{
+    transform: scale(1.5);
+}
+
+/* Lower part of webpage */
+#partB img{
+    width: 400px;
+    height: 400px;
+    margin: 30px 70px 10px 70px ;
+    border-radius: 30px;
+}
+
+.description{
+    text-align: justify;
+    margin: 150px 80px 0px 50px;
+    font-family: Kredit, Helvetica;
+}
+
+.section{
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}

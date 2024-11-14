@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/feedback-page-styles/feedback.css">
+    <title>FR-ED Feedback</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback" checked>
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="form-wrapper">
+            <form id="feedback-form" method="post">
+                <div class="form-header">
+                    <h1>Share your thoughts!</h1>
+                    <p>This quick form helps us understand your experience. Your feedback is important to us and will be used to imporve FR-ED.<br><b>Inputs with * are required fields!</b></p>
+                </div>
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">General</legend>
+                    <div class="form-option-wrapper">
+                        <label class="name-label" for="input-name">Name *</label>
+                        <input id="input-name" name="user-name" type="text" pattern="[A-Za-z\s]{3,}" title="Enter name container any letter from A to Z, minimum 3 characters" autocomplete="off" required>
+                    </div>
+                    <div class="form-option-wrapper">
+                        <label class="label-email" for="input-email">Email *</label>
+                        <input id="input-email" name="email" type="email" pattern="[a-z0-9.]+@[a-z0-9]+\.[a-z]{2,}$" title="Enter a valid email address" autocomplete="off" required>
+                    </div>
+                    <div class="form-option-wrapper">
+                        Was this your first time visiting? *
+                        <p class="visit-time-input-wrapper">
+                            <div class="input-wrapper">
+                                <input id="radio-yes" class="visit-time-input" name="visit-time" value="yes" type="radio">
+                                <label class="visit-time-label" for="radio-yes">Yes</label>
+                                <div class="check"></div>
+                            </div>
+                        </p>
+                        <p class="visit-time-input-wrapper">
+                            <div class="input-wrapper">
+                                <input id="radio-no" class="visit-time-input" name="visit-time" value="no" type="radio">
+                                <label class="visit-time-label" for="radio-no">No</label>
+                                <div class="check"></div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="form-option-wrapper radio-wrapper">
+                        Select User Type *: 
+                        <p class="radio-content">
+                            <input id="student" class="radio-button" name="user-type" value="student" type="radio" checked>
+                            <label class="radio-label" for="student">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="161" height="161"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><title>Icon student</title><path d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H256V416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"/></svg>
+                                Student
+                            </label>
+                        </p>
+                        <p class="radio-content">
+                            <input id="parent" class="radio-button" name="user-type" value="parent" type="radio">
+                            <label class="radio-label" for="parent">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="161" height="161"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><title>Icon parent</title><path d="M224 0a80 80 0 1 1 0 160A80 80 0 1 1 224 0zM436.8 382.8L373.5 462c-16.6 20.7-46.8 24.1-67.5 7.5c-17.6-14.1-22.7-38.1-13.5-57.7l-.8-.1c-38.9-5.6-74.3-25.1-99.7-54.8V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c0 .8 0 1.6 .1 2.4l101.4 50.7c23.7 11.9 33.3 40.7 21.5 64.4s-40.7 33.3-64.4 21.5L27.2 427.3c-1.1-.5-2.2-1.1-3.3-1.7c-4.9-2.8-9.2-6.4-12.6-10.6c-4.6-5.4-7.8-11.7-9.6-18.4c-3.3-12-1.9-25.2 4.8-36.6c.6-1.1 1.3-2.2 2-3.2L75.6 256.1c26.7-40.1 71.7-64.1 119.8-64.1h75.2c46.5 0 90.1 22.5 117.2 60.3l50.7 70.9c2.2 3 4 6.1 5.5 9.4c2.9 6.7 4.3 13.8 4 20.8c-.3 10.6-4.2 21-11.2 29.4zM320 332a44 44 0 1 0 -88 0 44 44 0 1 0 88 0z"/></svg>
+                                Parent
+                            </label>
+                        </p>
+                        <p class="radio-content">
+                            <input id="teacher" class="radio-button" name="user-type" value="teacher" type="radio">
+                            <label class="radio-label" for="teacher">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="161" height="161"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><title>Icon teacher</title><path d="M219.3 .5c3.1-.6 6.3-.6 9.4 0l200 40C439.9 42.7 448 52.6 448 64s-8.1 21.3-19.3 23.5L352 102.9V160c0 70.7-57.3 128-128 128s-128-57.3-128-128V102.9L48 93.3v65.1l15.7 78.4c.9 4.7-.3 9.6-3.3 13.3s-7.6 5.9-12.4 5.9H16c-4.8 0-9.3-2.1-12.4-5.9s-4.3-8.6-3.3-13.3L16 158.4V86.6C6.5 83.3 0 74.3 0 64C0 52.6 8.1 42.7 19.3 40.5l200-40zM111.9 327.7c10.5-3.4 21.8 .4 29.4 8.5l71 75.5c6.3 6.7 17 6.7 23.3 0l71-75.5c7.6-8.1 18.9-11.9 29.4-8.5C401 348.6 448 409.4 448 481.3c0 17-13.8 30.7-30.7 30.7H30.7C13.8 512 0 498.2 0 481.3c0-71.9 47-132.7 111.9-153.6z"/></svg>
+                                Teacher
+                            </label>
+                        </p>
+                    </div>
+                </fieldset>
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Feedback Details</legend>
+                    <div class="form-option-wrapper radio-wrapper">
+                        How satisfied are you?
+                        <p class="radio-content">
+                            <input id="unsatis" class="radio-button" name="satis-level" value="unsatisfactory" type="radio">
+                            <label class="radio-label" for="unsatis">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="161" height="161"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><title>Icon unsatisfactory</title><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM159.3 388.7c-2.6 8.4-11.6 13.2-20 10.5s-13.2-11.6-10.5-20C145.2 326.1 196.3 288 256 288s110.8 38.1 127.3 91.3c2.6 8.4-2.1 17.4-10.5 20s-17.4-2.1-20-10.5C340.5 349.4 302.1 320 256 320s-84.5 29.4-96.7 68.7zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                                Unsatisfactory
+                            </label>
+                        </p>
+                        <p class="radio-content">
+                            <input id="neutral" class="radio-button" name="satis-level" value="neutral" type="radio">
+                            <label class="radio-label" for="neutral">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="161" height="161"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><title>Icon neutral</title><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM176.4 176a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zM160 336H352c8.8 0 16 7.2 16 16s-7.2 16-16 16H160c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
+                                Neutral
+                            </label>
+                        </p>
+                        <p class="radio-content">
+                            <input id="satis" class="radio-button" name="satis-level" value="satisfactory" type="radio">
+                            <label class="radio-label" for="satis">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="161" height="161"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><title>Icon satisfactory</title><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM164.1 325.5C182 346.2 212.6 368 256 368s74-21.8 91.9-42.5c5.8-6.7 15.9-7.4 22.6-1.6s7.4 15.9 1.6 22.6C349.8 372.1 311.1 400 256 400s-93.8-27.9-116.1-53.5c-5.8-6.7-5.1-16.8 1.6-22.6s16.8-5.1 22.6 1.6zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                                satisfactory
+                            </label>
+                        </p>
+                    </div>
+                    <div class="form-option-wrapper">
+                        <label class="comment-label" for="comment-section">Comments</label>
+                        <textarea id="comment-section" autocomplete="off"></textarea>
+                    </div>
+                </fieldset>
+                <div class="form-option-wrapper feedback-button-wrapper">
+                    <button class="fred-button" type="reset">Reset</button>
+                    <button class="preview-close-btn fred-button" type="button">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div id="feedback-preview-container">
+            <div class="feedback-preview">
+                <div class="feedback-preview-wrapper">
+                    <button class="preview-close-btn fred-button">Edit</button>
+                    <button form="feedback-form" type="submit" id="feedback-form-sumbmit-btn" class="fred-button">Submit</button>
+                    <div>
+                        <p class="preview-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="scripts/feedback-page-scripts/feedback.js"></script>
+</body>
+</html>

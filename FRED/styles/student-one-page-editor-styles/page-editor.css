@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    font-family: 'Samsung Sans';
+    color: #04d9ff;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.work {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.work h3{
+    text-decoration: underline;
+}

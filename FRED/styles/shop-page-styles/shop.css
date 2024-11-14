@@ -1,0 +1,185 @@
+/* Body Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #04d9ff;
+    background: #000;
+    padding: 25px 0;
+
+}
+
+/* Cart Icon */
+.cart-icon {
+    position: absolute;
+    top: 75%; 
+    right: 20px; 
+    transform: translateY(-50%); 
+    width: 70px;
+    height: 70px; 
+    margin-right: 50px;
+}
+
+/* Introduction Section */
+.intro {
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif; 
+    
+}
+
+/* Heading Styles */
+.intro h1 {
+    font-size: 90px;
+    font-family: 'Kredit';
+}
+
+/* Paragraph Styles */
+.intro p {
+    font-size: 25px;
+    font-family: monospace, system-ui;
+}
+
+/* Product Image */
+.item {
+    width: 150px;
+    height: auto;
+}
+
+/* Catalog Section */
+.catalog {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 0; 
+    
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* Product Styles */
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Product Title Styles */
+.product h2{
+    font-size: 18px;
+}
+
+
+/* Product Price Styles */
+.product p{
+    font-size: 20px;
+}
+
+/* Select Styles */
+.product select {
+    margin-bottom: 10px; 
+    font-family: monospace, system-ui;
+    color: #1f51ff;
+    background-color: black;
+    height: 40px;
+    border:1px solid #1f51ff; ;
+}
+
+/* Hover Styles for Select */
+.product select:focus + .product {
+    color: black;
+    background-color: #1f51ff;
+}
+
+/* Button Styles */
+.product .fred-button {
+    margin-top: 10px; 
+}
+.product .fred-button {
+    margin-top: 10px; 
+}
+
+/* Donate Section styles*/
+.donate{
+    color: #39FF14;
+    padding-left: 50px;
+}
+
+
+/* Heading Styles for Donate Section */
+.donate h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Donate Options Styles */
+.donate-options {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    padding-top: 15px;
+}
+
+/* Paragraph Styles for Donate Options */
+.donate-options p {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* Donate Button Styles */
+.donate-button {
+    box-shadow: 4px 4px #151515, 9px 9px #39FF14;
+    color: black;
+    border: solid 2px #39FF14;
+    text-decoration: none;
+    padding: 12px 24px; /* Adjusted padding */
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    cursor: pointer;
+    overflow: hidden;
+    transition-delay: 0s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+}
+
+/* Donate Button Pseudo-element Styles */
+.donate-button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: #39FF14;
+    z-index: -1;
+    transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Donate Button Hover Styles */
+.donate-button:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+}
+
+/* Donate Button Hover Styles */
+.donate-button:hover {
+    box-shadow: 0 0 #151515, 0 0 #39FF14;
+    color: black;
+} 
+

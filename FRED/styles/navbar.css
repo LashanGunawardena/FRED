@@ -1,0 +1,135 @@
+:root {
+    --bounciness: 15;
+    --transition-duration: 0.3s;
+}
+
+nav {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-family: monospace, system-ui;
+    background-color: black;
+    border-radius: 15px;
+    color: #04d9ff;
+    transition: all 300ms ease-in-out;
+    z-index: 999;
+}
+
+.scroll-down nav {
+	transform: translateY(-100%);
+}
+
+
+.scroll-up nav {
+	filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+.menu-is-open nav {
+	overflow: hidden;
+	filter: none;
+}
+
+.navbar-radio-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+.navbar-radio-group > input[type="radio"] {
+    display: none;
+}
+
+.navbar-radio-group > label {
+    padding: 0.5rem 1.3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-radio-group > label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.selection-indicator-wrapper {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    mix-blend-mode: difference;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.25,calc(var(--bounciness) / 10),0.5,1);
+
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.selection-indicator-wrapper > span {
+    background-color: #04d9ff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    transition-duration: calc(1.25 * var(--transition-duration));
+    transition-timing-function: cubic-bezier(0.95,calc(0.5 * var(--bounciness)),0,1);
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(1):checked ~ 
+.selection-indicator-wrapper {
+    left: 0;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(2):checked ~ 
+.selection-indicator-wrapper {
+    left: 10%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(3):checked ~
+.selection-indicator-wrapper {
+    left: 20%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(4):checked ~
+.selection-indicator-wrapper {
+    left: 30%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(5):checked ~
+.selection-indicator-wrapper {
+    left: 40%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(6):checked ~
+.selection-indicator-wrapper {
+    left: 50%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(7):checked ~
+.selection-indicator-wrapper {
+    left: 60%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(8):checked ~
+.selection-indicator-wrapper {
+    left: 70%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(9):checked ~
+.selection-indicator-wrapper {
+    left: 80%;
+}
+
+.navbar-radio-group input[type="radio"]:nth-of-type(10):checked ~
+.selection-indicator-wrapper {
+    left: 90%;
+}
+
+.navbar-radio-group label:active ~ .selection-indicator-wrapper {
+    --transition-duration: 0.1s;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <style>
+        .page-editor-wrapper {
+            padding-bottom: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+    <title>FR-ED Feedback Completion</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">  
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home" checked>
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="page-editor-wrapper">
+            <button onclick="window.location.href = './student-1.html';" class="fred-button">Student 1</button>
+            <button onclick="window.location.href = './student-2.html';" class="fred-button">Student 2</button>
+            <button onclick="window.location.href = './student-3.html';" class="fred-button">Student 3</button>
+            <button onclick="window.location.href = './student-4.html';" class="fred-button">Student 4</button>
+        </div>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+</body>
+</html>

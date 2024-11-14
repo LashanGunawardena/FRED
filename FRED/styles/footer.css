@@ -1,0 +1,57 @@
+
+.footer-section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'FR-ED-details-section about-section footer-nav-bar';
+    justify-content: space-between;
+}
+
+.footer-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #04d9ff;
+    position: relative;
+}
+
+.footer-link::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #04d9ff;
+    transform: scale(1, 1);
+    transition: background-color .5 ease-in-out;
+    bottom: 0;
+}
+
+.footer-link:hover::before{
+    text-decoration: underline; 
+    animation: link ease 1s 1 300ms;
+    transform-origin: right;
+}
+
+
+.footer-column-1, .footer-column-2, .footer-column-3 {
+    font-family: 'Kindergarten';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 2em;
+    background: #2e2e2e;
+}
+
+@keyframes link {
+    50%{
+        transform: scaleX(0);
+    }
+    50.1% {
+        transform: translateX(-100%) scalex( -0.01);   
+    }
+    100% {
+        transform: translateX(-100%) scalex(-1);
+    }
+}

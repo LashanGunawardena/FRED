@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/home-page-styles/hero-section.css">
+    <link rel="stylesheet" type="text/css" href="styles/home-page-styles/course-section.css">
+    <link rel="stylesheet" type="text/css" href="styles/home-page-styles/volunteer-section.css">
+    <link rel="stylesheet" type="text/css" href="styles/home-page-styles/about-section.css">
+    <link rel="stylesheet" type="text/css" href="styles/home-page-styles/shop-section.css">
+    <link rel="stylesheet" type="text/css" href="styles/home-page-styles/feedback-section.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FR-ED Homepage</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">  
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home" checked>
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section-content-wrapper">
+                <div class="hero-section-text-container">
+                    <h1 class="hero-section-text">FR-ED<span class="hero-section-special-text">FREE EDUCATION</span></h1>
+                    <h2 class="hero-section-text" >KNOWLEDGE<span class="hero-section-special-text">OPEN SOURCE</span></h2>
+                    <h2 class="hero-section-text" >NO PAYWALL<span class="hero-section-special-text">NOT A SCAM!</span></h2>
+                    <p>Provide open access to knowledge and remove the barriers in the way of education.</p>
+                    <a class="hero-section-button fred-button" href="#courses-section-href-link">COURSES</a>
+                </div>
+            </div>
+            <img class="hero-section-image" src="images/home-page-images/hero-section-image.svg" width="700" loading="lazy" alt="kids floating around">
+        </section>
+        <section id="courses-section-href-link" class="courses-section">
+            <h1 glitch="CHECK OUT OUR COURSES">CHECK OUT OUR COURSES</h1>
+            <div class="course-wrapper">
+                <div class="course-card">
+                    <img src="images/home-page-images/math.svg" alt="mathemathics course image" width="200" height="200" loading="lazy">
+                    <p class="course-text">MATHEMATICS</p>
+                    <button onclick="window.location.href = './math-course.html'" class="course-button">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="images/home-page-images/chem.svg" alt="chemistry course image" width="200" height="200" loading="lazy">
+                    <p class="course-text">CHEMISTRY</p>
+                    <button onclick="window.location.href = './chemistry-course.html'" class="course-button">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="images/home-page-images/physics.svg" alt="physics course image" width="200" height="200" loading="lazy">
+                    <p class="course-text">PHYSICS</p>
+                    <button class="course-button">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <section class="volunteer-section">
+            <h1 class="volunteer-section-heading"></h1>
+            <img class="volunteer-section-image-1 hero-section-image" src="images/home-page-images/volunteer-section-image-one.svg" alt="image of 3D shapes floating" width="600" height="600" loading="lazy">
+            <img class="volunteer-section-image-2" src="images/home-page-images/volunteer-section-image-two.svg" alt="guy on desk working" width="400" height="400" loading="lazy">
+            <p class="volunteer-section-text">Are you a teacher and want to help us create a course for a specific subject? if yes! come join our team of wonderful teachers to help maintain the quality of our courses.</p>
+            <button onclick="window.location.href = './volunteer.html'" class="volunteer-section-button fred-button">Join Us</button>
+        </section>
+        <section class="about-section">
+            <h1 class="about-section-heading"><span>M</span><span>I</span><span>S</span><span>S</span><span>I</span><span>O</span><span>N</span></h1>
+            <img class="about-section-image-1" src="images/home-page-images/about-page-image-one.svg" alt="student floating around" loading="lazy">
+            <img class="about-section-image-2 hero-section-image" src="images/home-page-images/about-page-image-two.svg" alt="student objects floating around" loading="lazy">
+            <div class="about-section-content-wrapper">
+                <p class="about-section-text">Despite Sri Lanka having a free education system, we all know that's far from the truth. Parents spend quite a fortune to provide a quality education for their children.<br>
+                Here at FR-ED, our mission is to provide quality education without any sort of barriers. Find out more about us by clicking the button below!</p>
+                <button onclick="window.location.href = './about.html'" class="about-section-button fred-button">About Us</button>
+            </div>
+        </section>
+        <section class="shop-section">
+            <h1 class="shop-section-heading"><span>S</span><span>U</span><span>P</span><span>P</span><span>O</span><span>R</span><span>T</span><span>&nbsp;</span><span>U</span><span>S</span></h1>
+            <img class="shop-section-image" src="images/home-page-images/shop-section-image.svg" alt="objects floating around" loading="lazy" width="600" height="600">
+            <div class="shop-section-content-wrapper">
+                <p>Check out our store that includes cool merch which directly supports FR-ED in providing quality education and help maintain FR-ED completely free and open access</p>
+                <button onclick="window.location.href = './shop.html'" class="shop-section-button fred-button">Shop</button>
+            </div>
+        </section>
+        <section class="feedback-section">
+            <h1><span>G</span><span>O</span><span>T</span><span>&nbsp;</span><span>5</span><span>&nbsp;</span><span>M</span><span>I</span><span>N</span><span>U</span><span>T</span><span>E</span><span>S</span><span>?</span></h1>
+            <img src="images/home-page-images/feedback-section-image.svg" alt="girl sitting on couch working on her laptop" loading="lazy" width="500" height="450">
+            <p>We value your opinion and want to hear how we can improve. Let us know your thoughts and valuable feedback!</p>
+            <button onclick="window.location.href = './feedback.html'" class="feedback-section-button fred-button">Feedback</button>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+    <script defer src="scripts/home-page-scripts/volunteerSection.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel = "stylesheet" href = "styles/user-profile-page-styles/user-profile.css">
+    <link rel = "stylesheet" href = "styles/navbar.css">
+    <link rel = "stylesheet" href = "styles/main.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+</head>
+<body>
+    <!--Nav bar-->
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile" checked>
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <!--Topics and start button-->
+    <div id="totalTopics">
+        <div id="topic">User Profile</div>
+        <p>Tell us about your self....<p>
+        <a href="#totalContainer" onclick="startCustomPrompt()" id="startButton" class="fred-button">Start</a><br>
+    </div>
+    <!--gif at the center-->
+    <div id="centerGif"></div>
+    <!--All content-->
+    <div id="totalContainer">
+        <div id="container">
+            <!--Question prompts-->
+            <div class="promptBox" id="promptBox1">
+                <p class="noStep">STEP 1 Personal details | Question 1/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question1">Your first name* :</label>
+                        <div>
+                            <input type="text" id="question1">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox2">
+                <p class="noStep">STEP 1 Personal details | Question 2/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question2">Your surname* :</label>
+                        <div>
+                            <input type="text" id="question2">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox3">
+                <p class="noStep">STEP 1 Personal details | Question 3/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question3">Your age :</label>
+                        <div>
+                            <input type="text" id="question3">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox4">
+                <p class="noStep">STEP 1 Personal details | Question 4/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question4">Your gender :</label>
+                        <div>
+                            <input type="text" id="question4">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox5">
+                <p class="noStep">STEP 2 Volunteering Experiences | Question 1/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question5">Have you donated to education initiatives in the past*? :</label>
+                        <div>
+                            <input type="text" id="question5">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox6">
+                <p class="noStep">STEP 2 Volunteering Experiences | Question 2/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question6">what was your experience like? :</label>
+                        <div>
+                            <input type="text" id="question6" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox7">
+                <p class="noStep">STEP 2 Volunteering Experiences | Question 3/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question7">Do you have any preferences regarding how your donation is used? :</label>
+                        <div>
+                            <input type="text" id="question7" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox8">
+                <p class="noStep">STEP 2 Volunteering Experiences | Question 4/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question8">How do you see your involvement evolving beyond this initial donation? :</label>
+                        <div>
+                            <input type="text" id="question8" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div><div class="promptBox" id="promptBox9">
+                <p class="noStep">STEP 3 Educational details | Question 1/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question9">Are you currently enrolled in any educational programs*? :</label>
+                        <div>
+                            <input type="text" id="question9" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox10">
+                <p class="noStep">STEP 3 Educational details | Question 2/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question10">What is your current educational level? :</label>
+                        <div>
+                            <input type="text" id="question10" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox11">
+                <p class="noStep">STEP 3 Educational details | Question 3/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question11">Have you tried our free courses*? :</label>
+                        <div>
+                            <input type="text" id="question11" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox12">
+                <p class="noStep">STEP 3 Educational details | Question 4/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question12">Is there any additional content you would like to see added to the course? :</label>
+                        <div>
+                            <input type="text" id="question12" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div><div class="promptBox" id="promptBox13">
+                <p class="noStep">STEP 4 Contact details | Question 1/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question13">Your phone number* :</label>
+                        <div>
+                            <input type="text" id="question13" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox14">
+                <p class="noStep">STEP 4 Contact details | Question 2/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question14">Your email* :</label>
+                        <div>
+                            <input type="text" id="question14" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox15">
+                <p class="noStep">STEP 4 Contact details | Question 3/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question15">Your address :</label>
+                        <div>
+                            <input type="text" id="question15" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div class="promptBox" id="promptBox16">
+                <p class="noStep">STEP 4 Contact details | Question 4/4</p>
+                <div>
+                    <div class="questionBox">
+                        <label for="question16">Your postal code :</label>
+                        <div>
+                            <input type="text" id="question16" class="question">
+                        </div>
+                    <button onclick="nextCustomPrompt()"  class="fred-button">Next</button>
+                    <button onclick="skipCustomPrompt()"  class="fred-button">Skip</button>
+                    </div>
+                </div>
+            </div>
+            <div id="previous">
+                <p id="skippedIndex">Do you want to answer the skipped questions?</p>
+                <button onclick="previousQuestions()" id="prevButton" class="fred-button">Yes</button>
+                <a href="#outputInfo" onclick="stopQuestions()" id="stopButton" class="fred-button">No</a>
+            </div>
+            <div id="progressBar"> 
+                <progress id="updateProgressBar" value="0" max="100">progress</progress><br>
+                <label for="updateProgressBar" id="labelProgressBar"></label><span id="percentageValue"></span>
+            </div> 
+            <!--Output of the entered data-->
+            <div id="outputInfo">
+                <div id="outputInfoLabel">LET'S SEE WHO YOU ARE...</div>
+                <div id="outputInfo1">
+                    <p>First Name : <span id="outText1"></span></p>
+                    <p>Surname : <span id="outText2"></span></p>
+                    <p>Age : <span id="outText3"></span></p>
+                    <p>Gender : <span id="outText4"></span></p>
+                <hr></div>
+                <div id="outputInfo2">
+                    <p>Previous Donations : <span id="outText5"></span></p>
+                    <p>Experience : <span id="outText6"></span></p>
+                    <p>Preferences : <span id="outText7"></span></p>
+                    <p>Involvement : <span id="outText8"></span></p>
+                <hr></div>
+                <div id="outputInfo3">
+                    <p>Current enrollment : <span id="outText9"></span></p>
+                    <p>Educational level : <span id="outText10"></span></p>
+                    <p>Our courses : <span id="outText11"></span></p>
+                    <p>Additional content : <span id="outText12"></span></p>
+                <hr></div>
+                <div id="outputInfo4">
+                    <p>Phone number : <span id="outText13"></span></p>
+                    <p>Email : <span id="outText14"></span></p>
+                    <p>Address : <span id="outText15"></span></p>
+                    <p>Postal code : <span id="outText16"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/user-profile-page-scripts/user-profile.js"></script>
+    <script defer src="scripts/navbar.js"></script>
+</body>
+</html>

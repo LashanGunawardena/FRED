@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+    <title>Editor</title>
+    <link rel = "stylesheet" href = "styles/student-three-page-editor-styles/student-3.css">
+    <link rel = "stylesheet" href = "styles/navbar.css">
+    <link rel = "stylesheet" href = "styles/main.css">
+    <link rel = "stylesheet" href = "styles/footer.css">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About">
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor" checked>
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <div id="totalContent">
+        <!--My picture-->
+        <div id="topic">
+            <img src="images/student-3-page-editor-images/myBit.png" alt="My Picture">
+            <p id="firstName">LASHAN</p> 
+            <p id="lastName">GUNAWARDENA</p>
+        </div>
+        <!--My details-->
+        <div id="myDetails">
+            <p>Hi I'm Lashan Gunawardena</p>
+            <p>I completed the role of student 3</p>
+            <p>The following pages are my creations. Feel free to checkout!!!</p>
+        </div>
+        <!--Websites created-->
+        <div id="linkedWebContent">
+            <div class="content">
+                <a href="user-profile.html" target="_blank"><img src="images/student-3-page-editor-images/userprofilepreview.png" alt="User Profile"></a>
+                <p class="contentTopic">USER PROFILE</p>
+                <p>This is the User Profile. Here is a series of prompts asking for general questions from the user. 
+                    I have used javascript to ask the questions step wise and has the options to skip certain questions.
+                    A progress bar is used to show the progress of the user. </p>
+            </div>
+            <div class="content">
+                <a href="team.html" target="_blank"><img src="images/student-3-page-editor-images/teampreview.png" alt="Team"></a>
+                <p class="contentTopic">TEAM</p>
+                <p>This is the Team. It shows all the members of the team who contibuted on this project. 
+                    I have used css to style and animate the webpage and I have use a button to scroll down the page. </p>
+            </div>
+            <div class="content">
+                <a href="math-course.html" target="_blank"><img src="images/student-3-page-editor-images/contentpreview.png" alt="Content"></a>
+                <p class="contentTopic">CONTENT</p>
+                <p>This is the Maths content page. It shows the free maths courses offered by FR-ED. Here I have used a set of images that are clickable, 
+                    which will move to the content with the description. 
+                   </p>
+            </div>
+            <div class="content">
+                <a href="student-3.html"><img src="images/student-3-page-editor-images/editorpreview.png" alt="Editor"></a>
+                <p class="contentTopic">EDITOR</p>
+                <p>This is the Editor page. This is about me and details on my contribution to this project. 
+                    In this page contains an bitmoji of me and I have used gifs and css to style it to make it more attractive. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+</body>
+</html>

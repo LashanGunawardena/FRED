@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Valorant, Helvetica;
+    color: white;
+    background-color: black;
+} 
+
+#totalContent {
+    margin-bottom: 100px;
+} 
+
+/* Topics and my details */
+#topic{
+    margin-top: 320px;
+    margin-bottom: 350px;
+    color: white;
+}
+
+#topic p{
+    font-size: 90px;
+}
+
+#firstName{
+    padding-left: 250px;
+}
+#lastName{
+    padding-left: 650px;
+}
+
+#topic img{
+    width: 400px;
+    height: 900px;
+    z-index: -1;
+    position: absolute;
+    top:0px;
+    left: 450px;
+    background-image: url("../../images/student-3-page-editor-images/myBg1.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} 
+
+#myDetails{
+    text-align: center;
+    padding: 120px 0px 120px 0px;
+}
+
+#myDetails p{
+    font-size: 30px;
+    color: #04d9ff;
+}
+
+/* content on websites created */
+.content{
+    width: 100%;
+    float: left;
+}
+
+.content img{
+    width: 300px;
+    height: 200px;
+    margin-left: 25px;
+    border-radius: 20px;
+    border: 2px solid #04d9ff;
+}
+
+.content p{
+    padding-left: 30px;
+    text-align: left;
+    color: #04d9ff;
+    width: 320px;
+}
+
+.contentTopic{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#linkedWebContent{
+   display: flex;
+   justify-content:center;
+   margin-top: 150px;
+}
+

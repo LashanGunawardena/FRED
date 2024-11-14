@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/about-page-styles/about.css">
+    <title>FR-ED About Us</title>
+</head>
+<body>
+    <nav>
+        <img src="images/logo.svg" width="200" height="100" alt="FR-ED logo">
+        <div class="navbar-radio-group">
+            <input type="radio" id="navbar-item-1" name="navbar" value="Home">
+            <label for="navbar-item-1">Home</label>
+            <input type="radio" id="navbar-item-2" name="navbar" value="Courses">
+            <label for="navbar-item-2">Courses</label>
+            <input type="radio" id="navbar-item-3" name="navbar" value="Volunteer">
+            <label for="navbar-item-3">Volunteer</label>
+            <input type="radio" id="navbar-item-4" name="navbar" value="Shop">
+            <label for="navbar-item-4">Shop</label>
+            <input type="radio" id="navbar-item-5" name="navbar" value="About" checked>
+            <label for="navbar-item-5">About</label>
+            <input type="radio" id="navbar-item-6" name="navbar" value="Profile">
+            <label for="navbar-item-6">Profile</label>
+            <input type="radio" id="navbar-item-7" name="navbar" value="Team">
+            <label for="navbar-item-7">Team</label>
+            <input type="radio" id="navbar-item-8" name="navbar" value="Gallery">
+            <label for="navbar-item-8">Gallery</label>
+            <input type="radio" id="navbar-item-9" name="navbar" value="Feedback">
+            <label for="navbar-item-9">Feedback</label>
+            <input type="radio" id="navbar-item-10" name="navbar" value="PageEditor">
+            <label for="navbar-item-10">PageEditor</label>
+            <div class="selection-indicator-wrapper">
+                <span class="selection-indicator"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="about-section-hidden-content">
+            <h1 class="about-section-main-heading">About Us</h1>
+        </section>
+        <section class="about-section-hidden-content">
+            <div class="about-section-wrapper">
+                <div class="about-section-content-wrapper">
+                    <h2 class="about-section-sub-heading">Ruptures in Sri Lanka's Education:</h2>
+                    <p class="about-section-text">Ever since the kannangara reforms and Sri Lanka's independence, our education system has been gradually falling apart due to weak education reforms. Despite having a free education system, it is not necessarily free as majority of the students spand a fortune on tuition classes. Those that have access to good tuition classes often end up going to state universities while others have no other option but to spend even more resources on private universities.</p>
+                </div>
+                <img class="about-section-image-1" src="images/about-page-images/about-page-image-two.svg" alt="cartoon image of teams">
+            </div>
+        </section>
+        <section class="about-section-hidden-content">
+            <div class="about-section-wrapper">
+                <img class="about-section-image-2" src="images/about-page-images/about-page-image-one.svg" alt="mini figures on book">
+                <div class="about-section-content-wrapper">
+                    <h2 class="about-section-sub-heading">Explore a world of knowledge:</h2>
+                    <p class="about-section-text">Enter Fred (<u>FR</u>ee <u>ED</u>ucation), we strive to provide knowledge and learning resources for free without any barriers or pay walls. Students can learn and gain access to learning materials free of charge. Enjoy the freedom to learn at your own pace, anytime, anywhere. Of course, this is not a fairy tale nor a scam!</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-section-hidden-content">
+            <div class="gallery-section-wrapper">
+                <p class="gallery-section-text">Explore our gallery to see the tangible difference your support is making around the world</p>
+                <button class="fred-button gallery-section-button">Gallery</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section">
+        <div class="footer-column-1">
+            <p>FR-ED</p>
+            <p>Education made accessible.</p>
+            <p>2024 &copy; All Rights Reserved</p> 
+        </div>
+        <div class="footer-column-2">
+            <a href="about.html" class="footer-link">About</a>
+            <a href="about.html" class="footer-link">Our Mission</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="site-map.html" class="footer-link">Site Map</a>
+        </div>
+        <div class="footer-column-3">
+            <a href="courses.html" class="footer-link">Courses</a>
+            <a href="shop.html" class="footer-link">Shop</a>
+            <a href="volunteer.html" class="footer-link">Join our Team</a>
+            <a href="user-profile.html" class="footer-link">Profile</a>
+        </div>
+    </footer>
+    <script defer src="scripts/navbar.js"></script>
+    <script>
+        const galleryButton = document.querySelector('.gallery-section-button');
+        const hiddenElements = document.querySelectorAll('.about-section-hidden-content');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("about-section-show-content");
+                } else {
+                    entry.target.classList.remove("about-section-show-content");
+                }
+            });
+        });
+
+        hiddenElements.forEach((element) => observer.observe(element));
+
+        galleryButton.addEventListener("click", () => {
+            window.location.href = "gallery.html";
+        });
+    </script>
+</body>
+</html>
